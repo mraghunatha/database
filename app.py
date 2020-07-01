@@ -3,7 +3,8 @@ from flask_sqlalchemy import SQLAlchemy
 from flask import flash
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///students.sqlite3'
+
+app.config['DATABASE_URL'] = 'postgres:///students.sqlite3'
 
 app.config['SECRET_KEY'] = 'you-will-never-guess'
 
